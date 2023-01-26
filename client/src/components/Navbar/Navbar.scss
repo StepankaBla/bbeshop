@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 
-* {
+.nav_container{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+
 }
 :root {
   --mainColor: #ffffff;
@@ -13,10 +14,12 @@
   --textColor: black;
 }
 .logo-container {
+  top: 0;
   width: 100%;
   height: 100px;
   background-color: var(--mainColor);
   position: fixed;
+  z-index: 2;
   img {
     width: 100px;
     margin: auto;
@@ -25,16 +28,17 @@
 }
 .icon-container {
   position: fixed;
-  top: 4rem;
-  left: 17rem;
-  height: 10px;
-  width: 100%;
+  top: 2rem;
+  right: 2rem;
+  height: 30x;
+  width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   gap: 1.5rem;
+
   .icon {
     color: var(--secondaryColor);
     &:hover {
@@ -44,7 +48,7 @@
   }
 }
 header {
-  position: fixed;
+  position: absolute;
   top: 2rem;
   left: 0;
   height: 300px;
@@ -80,6 +84,7 @@ header .nav-btn {
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
+  position: fixed;
 }
 
 @media only screen and (max-width: 768px) {
@@ -89,6 +94,7 @@ header .nav-btn {
     align-self: start;
     margin-top: -16rem;
     margin-left: 2rem;
+    z-index: 2;
   }
   header nav {
     position: fixed;
@@ -105,6 +111,7 @@ header .nav-btn {
     background-color: var(--mainColorLight);
     transition: 1s;
     transform: translateY(-100vh);
+    z-index: 3;
   }
   header .responsive_nav {
     transform: none;
@@ -123,8 +130,8 @@ header .nav-btn {
     font-size: 1.8rem;
   }
   .icon-container {
-    top: 3.5rem;
-    left: 16rem;
+    top: 2em;
+    right: 3rem;
     font-size: 1.4rem;
     .icon {
       color: var(--secondaryColor);
@@ -138,7 +145,8 @@ header .nav-btn {
 
 @media only screen and (max-width: 600px) {
   .icon-container {
-    left: 8rem;
+    top: 2em;
+    right: 3rem;
     font-size: 1.3rem;
     .icon {
       color: var(--secondaryColor);

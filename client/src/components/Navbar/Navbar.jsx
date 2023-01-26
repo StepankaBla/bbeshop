@@ -1,11 +1,9 @@
 import React from "react";
 import { useRef } from "react";
-import { FaBars, FaSearch, FaShopify, FaStore, FaTimes } from "react-icons/fa";
-import SearchIcon from "@mui/icons-material/Search";
-import PersonIcon from "@mui/icons-material/Person";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { FaBars, FaSearch, FaStore, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import { motion} from "framer-motion";
 
 export const Navbar = () => {
   const navRef = useRef();
@@ -15,12 +13,9 @@ export const Navbar = () => {
   };
 
   return (
-    <>
+    <div className="nav_container">
       <div className="logo-container">
         <img src="/img/logo2.png" alt="" height="100" />
-      </div>
-      <div className="icons-container"></div>
-      <header>
         <div className="icon-container">
           <Link className=" icon" to="/">
             <FaStore />
@@ -29,10 +24,15 @@ export const Navbar = () => {
             <FaSearch />
           </Link>
         </div>
-        <nav ref={navRef}>
+      </div>
+      <header>
+        <nav ref={navRef} >
+          <motion.span whileHover={{ scale: 1.1}}>
           <Link className="link" to="/products/1">
             painting
           </Link>
+          </motion.span>
+       
           <Link className="link" to="/products/2">
             jewelry
           </Link>
@@ -53,7 +53,7 @@ export const Navbar = () => {
           <FaBars />
         </button>
       </header>
-    </>
+    </div>
   );
 };
 

@@ -12,10 +12,7 @@ import {
 import {
   FaPhoneVolume,
   FaMailBulk,
-  FaFacebook,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
+
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

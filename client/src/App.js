@@ -8,13 +8,22 @@ import Home from "./pages/Home/Home";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
 import "./app.scss"
+import { motion, AnimatePresence } from "framer-motion";
 const Layout = () =>{
   return (
-    <div className="app">
+    <AnimatePresence>
+   <motion.div 
+    initial={{ opacity:0, y:0}}
+    animate={{ opacity:1, y:0}}
+    exit={{ opacity:0, y:15}}
+    transition={{ delay: 0.10}} 
+   className="app">
       <Navbar/>
       <Outlet/>
       <Footer/>
-    </div>
+    </motion.div>
+    </AnimatePresence>
+ 
   )
 }
 
