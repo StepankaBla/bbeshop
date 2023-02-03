@@ -9,24 +9,19 @@ import {
   MDBRow,
   MDBBtn,
 } from "mdb-react-ui-kit";
-import {
-  FaPhoneVolume,
-  FaMailBulk,
-
-} from "react-icons/fa";
+import { FaPhoneVolume, FaMailBulk } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
     <MDBFooter className="text-center bg" color="white" bgColor="none">
       <MDBContainer className="p-4">
-       
         <section className="pt-5 pb-4">
           <form action="">
             <MDBRow className="d-flex justify-content-center">
               <MDBCol size="auto">
                 <p className="pt-2">
-                  <strong>Přihlaš se k odběru</strong>
+                  <strong>Sing up for newsletter</strong>
                 </p>
               </MDBCol>
 
@@ -41,7 +36,7 @@ export const Footer = () => {
 
               <MDBCol size="auto">
                 <MDBBtn outline color="light" type="submit" className="mb-4">
-                  Příhlásit
+                  Sing up
                 </MDBBtn>
               </MDBCol>
             </MDBRow>
@@ -51,39 +46,39 @@ export const Footer = () => {
         <section className="">
           <MDBRow>
             <MDBCol lg="4" md="6" className="mt-3 mb-8 mb-md-8">
-              <h5 className="text-uppercase ">ODKAZY</h5>
+              <h5 className="text-uppercase ">Links</h5>
 
               <ul className="list-unstyled mb-0">
                 <li>
                   <Link className="text-white" to="/products/1">
-                    Obrazy
+                    painting
                   </Link>
                 </li>
                 <li>
                   <Link className="text-white" to="/products/2">
-                    Šperky
+                    jewelry
                   </Link>
                 </li>
                 <li>
                   <Link className="text-white" to="/">
-                    Domů
+                    home
                   </Link>
                 </li>
                 <li>
                   <Link className="text-white" to="/">
-                    O nás
+                    about
                   </Link>
                 </li>
                 <li>
                   <Link className="text-white" to="/">
-                    Kontakt
+                    contact
                   </Link>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg="4" md="6" className="mt-3 mb-8 mb-md-8">
-              <h5 className="text-uppercase">Potřebuješ pomoct?</h5>
+              <h5 className="text-uppercase">Do you need help?</h5>
 
               <ul className="list-unstyled mb-0">
                 <li>
@@ -104,22 +99,22 @@ export const Footer = () => {
               <ul className="list-unstyled mb-0">
                 <li>
                   <a href="#!" className="text-white">
-                    Často kladené dotazy
+                    Questions
                   </a>
                 </li>
                 <li>
                   <a href="#!" className="text-white">
-                    Vrácení zboží
+                    Returned goods
                   </a>
                 </li>
                 <li>
                   <a href="#!" className="text-white">
-                    Všeobecné obchodní podmínky
+                    General Terms and Conditions
                   </a>
                 </li>
                 <li>
                   <a href="#!" className="text-white">
-                    Podmínky ochrany osobních údajů
+                    Terms of personal data protection
                   </a>
                 </li>
               </ul>

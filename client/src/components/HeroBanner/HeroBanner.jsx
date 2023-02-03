@@ -49,9 +49,6 @@ export const HeroBanner = () => {
         </motion.div>
         <img src="/img/art2.png" alt="" className="respHero1"/>
       </div>
-      <div className="z">
-
-      </div>
     </AnimatePresence>
   );
 };

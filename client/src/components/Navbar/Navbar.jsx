@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { FaBars, FaSearch, FaStore, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 export const Navbar = () => {
   const navRef = useRef();
@@ -26,20 +26,20 @@ export const Navbar = () => {
         </div>
       </div>
       <header>
-        <nav ref={navRef} >
-          <motion.span whileHover={{ scale: 1.1}}>
-          <Link className="link" to="/products/1">
-            painting
-          </Link>
+        <nav ref={navRef}>
+          <motion.span whileHover={{ scale: 1.1 }}>
+            <Link className="link" to="/products/1">
+              painting
+            </Link>
           </motion.span>
-       
+
           <Link className="link" to="/products/2">
             jewelry
           </Link>
           <Link className="link" to="/">
             home
           </Link>
-          <Link className="link" to="/">
+          <Link className="link" to="/about">
             about
           </Link>
           <Link className="link" to="/">
