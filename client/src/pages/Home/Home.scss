@@ -2,7 +2,7 @@
   margin-top: 12rem;
   width: 100%;
   height: 100px;
-  background-color: #e5d1d5;
+
   text-align: center;
   padding-top: 1.5rem;
   color: #c9a0a8;
@@ -10,7 +10,17 @@
     margin-bottom: 0rem;
   }
 }
-
+.pay{
+ margin-top: 15rem;
+ 
+  height: 300px;
+  img{
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.7;
+  }
+}
 .container {
   display: grid;
   place-items: center;
@@ -21,6 +31,24 @@
   .container_img{
     width: 500px;
     height: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container{
+    .container_img{
+      width: 400px;
+      height: 400px;
+    }
+  }
+  .pay{
+ 
+ 
+    height: 300px;
+    img{
+      max-height: 70px;
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 

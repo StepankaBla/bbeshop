@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
+
 export const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 100 });
@@ -18,12 +19,12 @@ export const Home = () => {
         <h2>Easy shopping!</h2>
         <span>guaranteed quality</span>
       </div>
-      <div className="container" >
+      <div className="container">
         <div className="container_img">
           <MDBCarousel showControls dealy={2000} dark showIndicators>
             <MDBCarouselItem
               className="w-100 d-block"
-              itemId={2}
+              itemId={1}
               src="/img/ic1.jpg"
               alt="..."
             >
@@ -55,8 +56,10 @@ export const Home = () => {
           </MDBCarousel>
         </div>
       </div>
-
-      <FeaturedProducts />
+      
+      <div className="pay">
+        <img src="/img/pay.png" alt="" />
+      </div>
     </div>
   );
 };

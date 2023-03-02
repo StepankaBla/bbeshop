@@ -5,8 +5,8 @@ import Typewriter from "typewriter-effect";
 
 export const HeroBanner = () => {
   return (
-    <AnimatePresence>
-      <div className="heroSection">
+    <AnimatePresence >
+      <motion.div className="heroSection">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,9 +46,14 @@ export const HeroBanner = () => {
             className="heroSection_box_right">
             <img src="/img/art.png" alt="" className="respHero" />
           </motion.div>
-        </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.1,
+              }} transition={{ duration: 0.8} } />
         <img src="/img/art2.png" alt="" className="respHero1"/>
-      </div>
+        
+      </motion.div>
+        </motion.div>
+       
     </AnimatePresence>
   );
 };

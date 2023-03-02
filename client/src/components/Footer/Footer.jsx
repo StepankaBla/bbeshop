@@ -50,23 +50,18 @@ export const Footer = () => {
 
               <ul className="list-unstyled mb-0">
                 <li>
-                  <Link className="text-white" to="/products/1">
-                    painting
-                  </Link>
-                </li>
-                <li>
-                  <Link className="text-white" to="/products/2">
-                    jewelry
-                  </Link>
-                </li>
-                <li>
                   <Link className="text-white" to="/">
                     home
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/about">
                     about
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-white" to="/products/1">
+                    painting
                   </Link>
                 </li>
                 <li>

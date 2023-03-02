@@ -24,6 +24,7 @@ yarn-error.log*
 
 .nyc_output
 coverage
+
 lib
 node_modules
 npm-debug.log
@@ -33,3 +34,4 @@ test/output
 .pnp.*
 .vscode
 scripts/test-legacy-source/output
+
