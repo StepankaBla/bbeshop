@@ -65,7 +65,7 @@ export const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-white" to="/">
+                  <Link className="text-white" to="/contact">
                     contact
                   </Link>
                 </li>

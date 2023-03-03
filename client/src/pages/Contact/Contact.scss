@@ -7,18 +7,33 @@
     padding-top: 1.5rem;
     color: #c9a0a8;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .imgContainer {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     margin: 2rem;
-    img {
-      width: 18%;
-      height: auto;
+    .phone {
+      width: auto;
+      height: 600px;
     }
-    .info{
-      
+    .iconContainer {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      gap: 4rem;
+      .info {
+        display: flex;
+        gap: 2rem;
+        font-size: 1.3rem;
+      }
+      img {
+        width: auto;
+        height: 40px;
+      }
     }
   }
   .imgContainer2 {
@@ -38,10 +53,46 @@
 }
 
 @media screen and (max-width: 768px) {
-  .bannerProduct {
-    margin-top: 9rem;
-    h2 {
-      font-size: 1.3rem;
+  .containerContacts {
+    .bannerProduct {
+      margin-top: 9rem;
+    }
+    .imgContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .phone {
+        width: 70%;
+        height: auto;
+      }
+      .iconContainer {
+        margin-top: 4rem;
+        gap: 2rem;
+        margin-bottom: 5rem;
+        .info {
+          display: flex;
+          gap: 1rem;
+          font-size: 1rem;
+        }
+      }
+    }
+    .imgContainer2 {
+      margin-left: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 30rem;
+      font-size: 0.4rem;
+      img {
+        width: 4%;
+        height: auto;
+        margin-right: 2rem;
+      }
     }
   }
 }

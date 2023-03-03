@@ -2,9 +2,9 @@
   padding: 20px 50px;
   display: flex;
   gap: 30px;
-  padding-top: 10rem;
+  margin: auto;
   width: 60%;
-  margin: 6rem auto;
+  margin: 18rem auto;
   margin-bottom: 15rem;
   .left {
     flex: 1;
@@ -169,6 +169,7 @@
 }
 @media screen and (max-width: 600px) {
   .product {
+    margin-top: 13rem;
     .left {
       .mainImg {
         img {
@@ -176,6 +177,7 @@
         }
       }
       .images{
+        padding-top:5rem ;
         img{
           height: 100px;
         }

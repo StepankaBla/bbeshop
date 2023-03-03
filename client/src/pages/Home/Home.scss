@@ -41,13 +41,20 @@
     }
   }
   .pay{
- 
- 
     height: 300px;
     img{
       max-height: 70px;
       margin: 0 auto;
       display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .container{
+    .container_img{
+      width: 300px;
+      height: 300px;
     }
   }
 }

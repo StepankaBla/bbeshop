@@ -32,7 +32,7 @@ export const Product = () => {
                   data?.attributes?.img?.data?.attributes?.url
                 }
                 alt=""
-                onClick={(e) => setSelectedImg("img")}
+                onMouseEnter={(e) => setSelectedImg("img")}
               />
               <img
                 src={
@@ -40,7 +40,7 @@ export const Product = () => {
                   data?.attributes?.img2?.data?.attributes?.url
                 }
                 alt=""
-                onClick={(e) => setSelectedImg("img2")}
+                onPointerOver={(e) => setSelectedImg("img2")}
               />
             </div>
             <div className="mainImg">

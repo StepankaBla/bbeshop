@@ -42,7 +42,7 @@ const About = () => {
           <h1>How our art is being made?</h1>
           <div className="content_box">
             <div data-aos="fade-right" className="content_box_left">
-              <img src="/img/drawing.jpg" alt="" />
+              <img src="/img/drawing.jpg" alt="" className="draw" />
             </div>
             <div data-aos="fade-left" className="content_box_right">
               <p>

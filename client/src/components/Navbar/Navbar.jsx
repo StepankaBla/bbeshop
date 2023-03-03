@@ -4,7 +4,6 @@ import { FaBars, FaSearch, FaStore, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import Cart from "../Cart/Cart";
-import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 
 export const Navbar = () => {
