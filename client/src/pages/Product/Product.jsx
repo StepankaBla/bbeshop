@@ -7,7 +7,6 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdFavoriteBorder } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartReducer";
-import Cart from "../../components/Cart/Cart";
 
 export const Product = () => {
   const id = useParams().id;
@@ -15,8 +14,7 @@ export const Product = () => {
   const [quantity, setQuantity] = useState(1);
 
   const dispatch = useDispatch();
-  const { data, loading, error } = useFetch(`/products/${id}?populate=*`);
-
+  const { data, loading } = useFetch(`/products/${id}?populate=*`);
 
   return (
     <div className="product">
@@ -82,8 +80,7 @@ export const Product = () => {
                       img: data.attributes.img.data.attributes.url,
                       quantity,
                     })
-                   
-                  ) 
+                  )
                 }
               >
                 <AiOutlineShoppingCart /> ADD TO CARD
@@ -91,12 +88,26 @@ export const Product = () => {
             </div>
 
             <div className="link">
-              <MdFavoriteBorder className="favorite" /> ADD TO WISHLIST
+              <MdFavoriteBorder
+                className="favorite"
+                onClick={() =>
+                  dispatch(
+                    addToCart({
+                      id: data.id,
+                      title: data.attributes.title,
+                      desc: data.attributes.desc,
+                      price: data.attributes.price,
+                      img: data.attributes.img.data.attributes.url,
+                      quantity,
+                    })
+                  )
+                }
+              />{" "}
+              ADD TO WISHLIST
             </div>
           </div>
         </>
       )}
-
     </div>
   );
 };

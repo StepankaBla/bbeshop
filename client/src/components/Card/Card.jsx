@@ -7,10 +7,19 @@ const Card = ({ item }) => {
     <Link className="link" to={`/product/${item.id}`}>
       <div className="card">
         <div className="image">
-          
-          <img src={process.env.REACT_APP_UPLOAD_URL+item.attributes?.img?.data?.attributes?.url} alt="" className="mainImg" />
           <img
-            src={process.env.REACT_APP_UPLOAD_URL+item.attributes?.img2?.data?.attributes?.url}
+            src={
+              process.env.REACT_APP_UPLOAD_URL +
+              item.attributes?.img?.data?.attributes?.url
+            }
+            alt=""
+            className="mainImg"
+          />
+          <img
+            src={
+              process.env.REACT_APP_UPLOAD_URL +
+              item.attributes?.img2?.data?.attributes?.url
+            }
             alt=""
             className="secondImg"
           />

@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 export const HeroBanner = () => {
   return (
-    <AnimatePresence >
+    <AnimatePresence>
       <motion.div className="heroSection">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
@@ -27,8 +27,9 @@ export const HeroBanner = () => {
               />
             </h2>
             <p>
-              Welcome to our <b>art e-shop!</b> Here you will find a wide selection of
-              unique and original pieces created by <b>talented artist.</b>
+              Welcome to our <b>art e-shop!</b> Here you will find a wide
+              selection of unique and original pieces created by{" "}
+              <b>talented artist.</b>
             </p>
             <p>
               Whether you're looking for a painting to brighten up your living
@@ -37,23 +38,22 @@ export const HeroBanner = () => {
               collection and discover the perfect piece to suit your style and
               taste.
             </p>
-
           </div>
 
           <motion.div
-            whileHover={{ scale: 1.1,
-              }} transition={{ duration: 0.8} } 
-            className="heroSection_box_right">
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.8 }}
+            className="heroSection_box_right"
+          >
             <img src="/img/art.png" alt="" className="respHero" />
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.1,
-              }} transition={{ duration: 0.8} } />
-        <img src="/img/art2.png" alt="" className="respHero1"/>
-        
-      </motion.div>
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.8 }}
+          />
+          <img src="/img/art2.png" alt="" className="respHero1" />
         </motion.div>
-       
+      </motion.div>
     </AnimatePresence>
   );
 };

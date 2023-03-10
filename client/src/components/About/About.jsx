@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./About.scss";
-import { motion, AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -9,7 +8,6 @@ const About = () => {
     AOS.init({ duration: 600 });
   }, []);
   return (
-    <AnimatePresence>
       <div className="about_container">
         <div className="contentContainer">
           <h1>Who is behind all of this?</h1>
@@ -63,7 +61,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </AnimatePresence>
   );
 };
 

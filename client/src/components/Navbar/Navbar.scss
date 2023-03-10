@@ -1,16 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
-
-.nav_container {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
 :root {
   --mainColor: #ffffff;
   --mainColorLight: #e5d1d5;
   --secondaryColor: #c9a0a8;
   --textColor: black;
+}
+.nav_container {
+  padding: 0;
+  margin: 0;
 }
 .logo-container {
   top: 0;
@@ -37,8 +33,7 @@
   justify-content: center;
   font-size: 1.6rem;
   gap: 1.5rem;
-
-  .icon {
+ .icon {
     color: var(--secondaryColor);
     &:hover {
       color: #a38389;

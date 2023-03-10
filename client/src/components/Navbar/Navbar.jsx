@@ -15,6 +15,7 @@ export const Navbar = () => {
 
   const [open, setOpen] = useState(false)
   const products = useSelector((state) => state.cart.products);
+  
   return (
     <div className="nav_container">
       <div className="logo-container">

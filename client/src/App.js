@@ -4,26 +4,36 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
+import Order from "./pages/Order/Order";
 import Contact from "./pages/Contact/Contact";
+import Cookies from "./pages/Cookies/Cookies";
 import "./app.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import AboutUs from "./pages/About/AboutUs";
 import { useEffect, useState } from "react";
 import PulseLoader from "react-spinners/PulseLoader";
+
+
+
 const Layout = () => {
+  const [show, setShow] = useState(true);
+  const handleClose = () => setShow(false);
   const [loading, setLoading] = useState(false);
+
   const style = {
     position: "fixed",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
   };
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
+  
   return (
     <AnimatePresence>
       {loading ? (
@@ -43,6 +53,7 @@ const Layout = () => {
           transition={{ delay: 0.1 }}
           className="app"
         >
+          <Cookies/>
           <Navbar />
           <Outlet />
           <Footer />
@@ -78,6 +89,11 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
     ],
+    
+  },
+  {
+    path: "/order",
+    element: <Order />,
   },
 ]);
 function App() {

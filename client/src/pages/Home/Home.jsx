@@ -1,13 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import "./Home.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
-
-export const Home = () => {
+export const Home = ({}) => {
   useEffect(() => {
     AOS.init({ duration: 100 });
   }, []);
@@ -56,7 +54,6 @@ export const Home = () => {
           </MDBCarousel>
         </div>
       </div>
-      
       <div className="pay">
         <img src="/img/pay.png" alt="" />
       </div>

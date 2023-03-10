@@ -1,7 +1,4 @@
-* {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
+
 .heroSection {
   padding-top: 15rem;
   height: auto;
@@ -14,9 +11,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   font-size: 1.2rem;
-}
-.z {
-  height: 800px;
 }
 .heroSection_box_left {
   padding-right: 0rem;
