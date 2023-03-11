@@ -26,14 +26,13 @@ const Cart = () => {
   const handlePayment = async () => {
     try {
       const stripe = await stripePromise;
-
       const res = await makeRequest.post("/orders", {
         products,
       });
-
       await stripe.redirectToCheckout({
         sessionId: res.data.stripeSession.id,
       });
+
     } catch (err) {
       console.log(err);
     }
